@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS Maze Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BFS Maze Runner</h1>
+        <div class="controls">
+            <button id="generateBtn">Generate Maze</button>
+            <button id="solveBtn">Solve with BFS</button>
+            <button id="resetBtn">Reset</button>
+            <label>
+                Size: <input type="range" id="sizeSlider" min="10" max="30" value="20">
+                <span id="sizeValue">20</span>
+            </label>
+        </div>
+        <canvas id="mazeCanvas"></canvas>
+        <div class="stats">
+            <div>Steps Explored: <span id="stepsCount">0</span></div>
+            <div>Path Length: <span id="pathLength">0</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
